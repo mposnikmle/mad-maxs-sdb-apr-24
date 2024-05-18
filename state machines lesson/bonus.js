@@ -2,8 +2,8 @@
 
 // ! state machine
 const mainStreet = {
-    myHouse: ["street"],
-    street: ["myHouse", "dunkin", "mcdonalds", "school", "pharmacy"],
+    myhouse: ["street"],
+    street: ["myhouse", "dunkin", "mcdonalds", "school", "pharmacy"],
     dunkin: ["street"],
     mcdonalds: ["street"],
     school: ["street"],
@@ -18,7 +18,7 @@ const playerAttire = {
 
 
 
-let currentLocation = "myHouse";
+let currentLocation = "myhouse";
 let currentAttire = "noShoes";
 
 // * These 2 functions are the same exact thing, only readability is different
@@ -57,7 +57,7 @@ async function playGame() {
     const availableLocations = mainStreet[currentLocation].filter(loc => loc!== currentLocation);
     const availableAttires = playerAttire[currentAttire].filter(attire => attire!== currentAttire);
     let message;
-    if (currentLocation === "myHouse" && currentAttire == "noShoes") {
+    if (currentLocation === "myhouse" && currentAttire == "noShoes") {
         message = `I am at ${currentLocation}, I need to wear sandals to leave`;
     } else {
         message = `I am at ${currentLocation}, I can go to ${availableLocations.join(', ')}`;
@@ -66,8 +66,8 @@ async function playGame() {
     let answer = await ask('> ');
 
     if (availableLocations.includes(answer.toLowerCase())) {
-        if (currentLocation === "myHouse" && currentAttire == "noShoes") {
-        console.log("You need to wear running shoes to leave myHouse");
+        if (currentLocation == "myhouse" && currentAttire !== "sandals") {
+        console.log(`type 'sandals' to put on sandals`);
         } else {
         changeLocation(answer.toLowerCase());
         console.log(`You go to ${answer.toLowerCase()}`);
