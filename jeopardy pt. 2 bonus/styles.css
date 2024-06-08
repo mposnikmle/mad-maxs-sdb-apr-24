@@ -1,0 +1,294 @@
+body {
+    background-color: #0e23ac;
+    color: #fffefe;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* headers: Welcome, first round, second round, and final round */
+header {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 4px;  
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    font-size: 10vw;
+    
+}
+
+/* jeopardy photo on home page */
+#jeopardy {
+    width: 75%;
+    height: 100%;
+    margin-right: .5vw;
+    margin-left: 2vw;
+    border: 2px solid black;
+}
+
+/* final jeopardy photo on final page */
+#final-jeopardy {
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
+}
+
+/* play button on home page */
+#play {
+    display: block;
+    background-color: #19d700;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 2.5em;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+/* footer on home page */
+footer {
+    background-color: #424555cb;
+    text-align: center;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+    padding-right: 40%;
+    padding-left: 40%;
+    border: 2px solid black;
+    margin-top: 25vh;
+    font-size: 3vw;
+}
+
+/* footer on all other pages */
+#game-footer {
+    background-color: #424555cb;
+    text-align: center;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+    padding-right: 40%;
+    padding-left: 40%;
+    border: 2px solid black;
+    margin-top: 10vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 3vw;
+}
+
+/* h1 player turn */
+#player-turn {
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: .5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    font-size: 5vw;
+}
+
+/* h2 final catergory on final page */
+#final-category {
+    background-color: #0c5ec8;
+    border: 2px solid black;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 14pt;
+}
+
+/* user input */
+#input-box {
+    border: 2px solid black;
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    margin-top: 5px;
+    margin-bottom: 7.5px;
+    margin-left: 15em;
+    margin-right: 15em;
+    display: flex;
+    justify-content: center;
+    resize: none;
+}
+
+/* user bet input, input on final page */
+#bet, #final-answer {
+    border: 2px solid black;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 15em;
+    margin-right: 15em;
+    display: flex;
+    justify-content: center;
+    resize: none;
+}
+
+/* guess and pass buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* all buttons */
+button {
+    background-color: #f9f9f9;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: 1.5ch;
+}
+
+/* next round button */
+#next-round {
+    display: flex;
+    align-items: center;
+    background-color: #6863ea;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 80%;
+    font-size: 1ch;
+}
+
+/* bet button */
+#bet-button {
+    background-color: rgb(4, 255, 0);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1em;
+}
+
+/* player scores */
+.scores {
+    /* width: 5%;
+    height: 5%; */
+    display: flex;
+    justify-content: center;
+}
+
+/* player scores and final catergory */
+h2 {
+    background-color: #0f63f4;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: 10pt;
+}
+
+
+.container div {
+    padding: 10px; /* Adjust the value as needed */
+    border: 1px solid rgb(0, 0, 0); /* Adjust the color and thickness as needed */
+    text-align: center;
+    background-color: #010b4d;
+}
+
+
+.container {  
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 5px 5px;
+grid-auto-flow: row;
+grid-template-areas:
+"cat-1 cat-2 cat-3 cat-4 cat-5 cat-6"
+"cat-1-100 cat-2-100 cat-3-100 cat-4-100 cat-5-100 cat-6-100"
+"cat-1-200 cat-2-200 cat-3-200 cat-4-200 cat-5-200 cat-6-200"
+"cat-1-300 cat-2-300 cat-3-300 cat-4-300 cat-5-300 cat-6-300"
+"cat-1-400 cat-2-400 cat-3-400 cat-4-400 cat-5-400 cat-6-400"
+"cat-1-500 cat-2-500 cat-3-500 cat-4-500 cat-5-500 cat-6-500";
+}
+
+.cat-1 { grid-area: cat-1; }
+.cat-2 { grid-area: cat-2; }
+.cat-3 { grid-area: cat-3; }
+.cat-4 { grid-area: cat-4; }
+.cat-5 { grid-area: cat-5; }
+.cat-6 { grid-area: cat-6; }
+
+.cat-1-100 { grid-area: cat-1-100; }
+.cat-2-100 { grid-area: cat-2-100; }
+.cat-3-100 { grid-area: cat-3-100; }
+.cat-4-100 { grid-area: cat-4-100; }
+.cat-5-100 { grid-area: cat-5-100; }
+.cat-6-100 { grid-area: cat-6-100; }
+
+.cat-1-200 { grid-area: cat-1-200; }
+.cat-2-200 { grid-area: cat-2-200; }
+.cat-3-200 { grid-area: cat-3-200; }
+.cat-4-200 { grid-area: cat-4-200; }
+.cat-5-200 { grid-area: cat-5-200; }
+.cat-6-200 { grid-area: cat-6-200; }
+
+.cat-1-300 { grid-area: cat-1-300; }
+.cat-2-300 { grid-area: cat-2-300; }
+.cat-3-300 { grid-area: cat-3-300; }
+.cat-4-300 { grid-area: cat-4-300; }
+.cat-5-300 { grid-area: cat-5-300; }
+.cat-6-300 { grid-area: cat-6-300; }
+
+.cat-1-400 { grid-area: cat-1-400; }
+.cat-2-400 { grid-area: cat-2-400; }
+.cat-3-400 { grid-area: cat-3-400; }
+.cat-4-400 { grid-area: cat-4-400; }
+.cat-5-400 { grid-area: cat-5-400; }
+.cat-6-400 { grid-area: cat-6-400; }
+
+.cat-1-500 { grid-area: cat-1-500; }
+.cat-2-500 { grid-area: cat-2-500; }
+.cat-3-500 { grid-area: cat-3-500; }
+.cat-4-500 { grid-area: cat-4-500; }
+.cat-5-500 { grid-area: cat-5-500; }
+.cat-6-500 { grid-area: cat-6-500; }
+
+
+body {
+    background-color: #0e23ac;
+    color: #fffefe;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* headers: Welcome, first round, second round, and final round */
+header {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 4px;  
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    font-size: 5vw;
+}
+
+#final-question {
+    padding: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: #010b4d;
+}
