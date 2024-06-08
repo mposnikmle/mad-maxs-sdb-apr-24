@@ -1,0 +1,17 @@
+{
+  "name": "unit-5-hello-express-mposnikmle",
+  "version": "1.0.0",
+  "description": "In this lab, we will be using the Express Node.js framework to write our first server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
