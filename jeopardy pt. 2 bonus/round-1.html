@@ -1,85 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
     <title>Jeopardy</title>
-  </head>
-  <body>
+</head>
+<body>
     <div>
-
-      <header>First Round</header>
-  
-      <h1 id="player-turn">Player Turn</h1>
-  
-      <div class="container">
-        <div class="category cat-1">Category</div>
-        <div class="category cat-2">Category</div>
-        <div class="category cat-3">Category</div>
-        <div class="category cat-4">Category</div>
-        <div class="category cat-5">Category</div>
-        <div class="category cat-6">Category</div>
-        <div class="cat-1-100">100</div>
-        <div class="cat-2-100">100</div>
-        <div class="cat-3-100">100</div>
-        <div class="cat-4-100">100</div>
-        <div class="cat-5-100">100</div>
-        <div class="cat-6-100">100</div>
-        <div class="cat-1-200">200</div>
-        <div class="cat-2-200">200</div>
-        <div class="cat-3-200">200</div>
-        <div class="cat-4-200">200</div>
-        <div class="cat-5-200">200</div>
-        <div class="cat-6-200">200</div>
-        <div class="cat-1-300">300</div>
-        <div class="cat-2-300">300</div>
-        <div class="cat-3-300">300</div>
-        <div class="cat-4-300">300</div>
-        <div class="cat-5-300">300</div>
-        <div class="cat-6-300">300</div>
-        <div class="cat-1-400">400</div>
-        <div class="cat-2-400">400</div>
-        <div class="cat-3-400">400</div>
-        <div class="cat-4-400">400</div>
-        <div class="cat-5-400">400</div>
-        <div class="cat-6-400">400</div>
-        <div class="cat-1-500">500</div>
-        <div class="cat-2-500">500</div>
-        <div class="cat-3-500">500</div>
-        <div class="cat-4-500">500</div>
-        <div class="cat-5-500">500</div>
-        <div class="cat-6-500">500</div>
-      </div>
-  
-  
-          <div class="buttons">
+        <header>First Round</header>
+        <h1 id="player-turn">Player Turn</h1>
+        <div class="container">
+            <div class="category cat-1">Category</div>
+            <div class="category cat-2">Category</div>
+            <div class="category cat-3">Category</div>
+            <div class="category cat-4">Category</div>
+            <div class="category cat-5">Category</div>
+            <div class="category cat-6">Category</div>
+            <div class="cat-1-100">100</div>
+            <div class="cat-2-100">100</div>
+            <div class="cat-3-100">100</div>
+            <div class="cat-4-100">100</div>
+            <div class="cat-5-100">100</div>
+            <div class="cat-6-100">100</div>
+            <div class="cat-1-200">200</div>
+            <div class="cat-2-200">200</div>
+            <div class="cat-3-200">200</div>
+            <div class="cat-4-200">200</div>
+            <div class="cat-5-200">200</div>
+            <div class="cat-6-200">200</div>
+            <div class="cat-1-300">300</div>
+            <div class="cat-2-300">300</div>
+            <div class="cat-3-300">300</div>
+            <div class="cat-4-300">300</div>
+            <div class="cat-5-300">300</div>
+            <div class="cat-6-300">300</div>
+            <div class="cat-1-400">400</div>
+            <div class="cat-2-400">400</div>
+            <div class="cat-3-400">400</div>
+            <div class="cat-4-400">400</div>
+            <div class="cat-5-400">400</div>
+            <div class="cat-6-400">400</div>
+            <div class="cat-1-500">500</div>
+            <div class="cat-2-500">500</div>
+            <div class="cat-3-500">500</div>
+            <div class="cat-4-500">500</div>
+            <div class="cat-5-500">500</div>
+            <div class="cat-6-500">500</div>
+        </div>
+        <div class="buttons">
             <button id="guess-button">Guess</button>
             <button id="pass-button">Pass</button>
-          </div>
-  
         </div>
-      </div>
-      
-  
-      <div class="scores">
-        <div>
-          <h2 id="player1-name">Player 1</h2>
-          <h2>score: </h2>
-        </div>
-        <div>
-          <h2 id="player2-name">Player 2</h2>
-          <h2>score: </h2>
-        </div>
-      </div>
-      
-      <button id="next-round" onclick="window.location.href = 'round-2.html'">Next Round</button>
-      
-      
-      <footer id="game-footer">Site Information</footer>
     </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1 class="modal-question"></h1>
+            <input type="text" name="" class="modal-input">
+        </div>
+    </div>
+    <div class="scores">
+        <div>
+            <h2 id="player1-name">Player 1</h2>
+            <h2>score: </h2>
+        </div>
+        <div>
+            <h2 id="player2-name">Player 2</h2>
+            <h2>score: </h2>
+        </div>
+    </div>
+    <button id="next-round" onclick="window.location.href = 'round-2.html'">Next Round</button>
+    <footer id="game-footer">Site Information</footer>
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
-  </body>
+</body>
 </html>
