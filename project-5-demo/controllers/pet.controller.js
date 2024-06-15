@@ -97,6 +97,50 @@ router.delete("/delete/:id", (req, res) => {
 })
 
 
+
+router.patch("/update/:id", async function (req, res) {
+    try {
+        const post_id = req.params.id;
+
+        let petArray = read();
+
+        let petIndex = petArray.findIndex((petObject) => petObject.id === post_id);
+
+        if (petIndex === -1) {
+            throw new Error("Pet Post not found");
+        }
+
+        let newObject = req.body;
+        let originalObject = petArray[petIndex];
+
+        // Merge the existing pet object with the new data from req.body
+        petArray[petIndex] = { ...originalObject, ...newObject };
+
+        // Log the updated array to verify changes before saving
+        console.log("Updated pet array:", petArray);
+
+        // Save the updated array back to the file
+        save(petArray);
+
+        // Verify the file content after saving
+        const verifyArray = read();
+
+        res.json({
+            message: "Pet Post updated successfully",
+            pet: petArray[petIndex] // Return the updated pet object
+        });
+
+    } catch (error) {
+        console.error("Error updating pet post:", error);
+        res.status(500).json({
+            message: error.message,
+        });
+    }
+});
+
+
+
+
 //! Helper Functions
 /* 
 Read Function for reading a file.
