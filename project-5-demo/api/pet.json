@@ -1,0 +1,20 @@
+[
+  {
+    "id": "8bcdfe74-8d7d-4b18-aeb8-fb85b512eb00",
+    "name": "Clara",
+    "description": "A small black cat",
+    "type": "cat"
+  },
+  {
+    "id": "4d285bff-297a-4234-bcd0-0d23372b7acc",
+    "name": "Clifford",
+    "description": "Big Red",
+    "type": "dog"
+  },
+  {
+    "id": "8b722172-ba81-4877-9919-b98357652916",
+    "name": "Snow",
+    "description": "Large calico",
+    "type": "cat"
+  }
+]
